@@ -1,0 +1,64 @@
+ВИЗУАЛЬНАЯ АРХИТЕКТУРА ПРОЕКТА
+
+======================================== 1. Общая схема работы проекта
+========================================
+
+Пользователь │ ▼ Streamlit Dashboard app/streamlit_app.py │ ├──
+Загружает очищенные данные │ ▼ │ data/processed/clean_real_estate.csv │
+├── Показывает EDA-графики │ ▼ │ Визуализация цен, районов, площади,
+комнат │ ├── Использует ML-модель │ ▼ │ models/price_model.pkl │ └──
+Выводит прогноз цены ▼ Результат пользователю
+
+======================================== 2. Структура проекта
+========================================
+
+real_estate_visualization_project/
+
+├── app/ │ └── streamlit_app.py │ ├── запуск интерактивного дашборда │
+├── отображение графиков │ ├── работа фильтров │ └── прогнозирование
+цены │ ├── data/ │ ├── raw/ │ │ └── real_estate_raw.csv │ │ └── исходные
+данные │ │ │ └── processed/ │ └── clean_real_estate.csv │ └── очищенные
+данные │ ├── notebooks/ │ ├── 01_eda.ipynb │ │ └── первичный анализ
+данных │ │ │ ├── 02_cleaning.ipynb │ │ └── очистка данных │ │ │ └──
+03_ml_model.ipynb │ └── обучение модели │ ├── src/ │ ├──
+data_preprocessing.py │ ├── eda.py │ ├── train_model.py │ └── predict.py
+│ ├── models/ │ └── price_model.pkl │ ├── reports/ │ ├──
+final_report.docx │ └── ml_results.png │ ├── requirements.txt ├──
+README.md └── .gitignore
+
+======================================== 3. Поток данных
+========================================
+
+1.  data/raw/real_estate_raw.csv │ ▼
+2.  src/data_preprocessing.py │ ▼
+3.  data/processed/clean_real_estate.csv │ ├── notebooks/01_eda.ipynb
+    ├── src/train_model.py └── app/streamlit_app.py
+
+======================================== 4. Работа ML
+========================================
+
+clean_real_estate.csv │ ▼ src/train_model.py │ ├── разделение train/test
+├── обучение RandomForestRegressor ├── вычисление MAE, RMSE, R² └──
+сохранение модели ▼ models/price_model.pkl │ ▼ app/streamlit_app.py │ ▼
+Прогноз стоимости недвижимости
+
+======================================== 5. Что запускается
+========================================
+
+1.  Очистка данных
+
+python src/data_preprocessing.py
+
+2.  Обучение модели
+
+python src/train_model.py
+
+3.  Запуск дашборда
+
+streamlit run app/streamlit_app.py
+
+======================================== 6. Итоговая архитектура
+========================================
+
+RAW DATA │ ▼ CLEANING │ ▼ PROCESSED DATA │ ├── EDA ├── DASHBOARD └── ML
+TRAINING │ ▼ MODEL.PKL │ ▼ STREAMLIT APP │ ▼ USER RESULT
