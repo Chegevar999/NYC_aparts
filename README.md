@@ -174,9 +174,6 @@ real_estate_visualization_project/
 │   ├── elbow_method.png
 │   └── dashboard_screen.png
 │
-├── report/
-│   └── final_report.md
-│
 ├── README.md
 ├── requirements.txt
 └── .gitignore
