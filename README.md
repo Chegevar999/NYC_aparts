@@ -884,45 +884,10 @@ python app/streamlit_app.py
 
 ---
 
-## 20. Что необходимо сделать перед сдачей
-
-Перед сдачей проекта необходимо:
-
-1. Загрузить проект на GitHub.
-2. Проверить, что репозиторий публичный или доступен преподавателю.
-3. Убедиться, что в репозитории есть `README.md`.
-4. Проверить наличие `requirements.txt`.
-5. Проверить наличие папки `img/` со скриншотами.
-6. Проверить запуск Streamlit-приложения.
-7. Сделать не менее 5 коммитов.
-8. Добавить ссылку на GitHub в итоговый отчёт.
-9. Проверить, что все ноутбуки открываются.
-10. На защите показать дашборд, графики, ML-модель и выводы.
-
+## 20. Архитектура проекта
+https://github.com/Chegevar999/NYC_aparts/blob/main/Архитектура_проекта.png
 ---
 
-## 21. Команды для GitHub
-
-Пример команд для загрузки проекта:
-
-```bash
-git init
-git add .
-git commit -m "Initial project structure"
-git branch -M main
-git remote add origin https://github.com/Chegevar999/NYC_aparts.git
-git push -u origin main
-```
-
-Если репозиторий уже создан:
-
-```bash
-git add .
-git commit -m "Update real estate visualization project"
-git push
-```
-
----
 
 ## 22. Автор
 
