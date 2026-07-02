@@ -76,19 +76,13 @@ Python, pandas, numpy, matplotlib, plotly, scikit-learn, streamlit, GitHub.
 - Признаки: `LotArea`, `OverallQual`, `OverallCond`, `YearBuilt`, `GrLivArea`, `FullBath`, `GarageCars`, `GarageArea`, `TotalBsmtSF`, `TotRmsAbvGrd`
 - Метрики: Inertia, Silhouette Score
 - Визуализация: PCA 2D scatter plot, elbow method
+- ML-задача реализована как регрессионная модель прогнозирования цены недвижимости.
 
 ## Как запустить проект
 ```bash
 pip install -r requirements.txt
 streamlit run app/streamlit_app.py
 ```
-
-## Что сделать перед сдачей
-1. Создать публичный GitHub-репозиторий.
-2. Загрузить туда все файлы проекта.
-3. Сделать не менее 5 коммитов.
-4. Добавить ссылку на GitHub в этот README и в `report/final_report.md`.
-5. Сделать скриншот дашборда и сохранить его в папку `img/`.
 
 ## Автор
 Наби Азамат
