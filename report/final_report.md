@@ -121,7 +121,7 @@
 
 ## 15. Ссылка на GitHub-репозиторий
 Добавить после загрузки проекта на GitHub:  
-`https://github.com/username/real_estate_visualization_project`
+`https://github.com/Chegevar999/NYC_aparts/tree/main`
 
 ## 16. Чек-лист соответствия критериям
 | Критерий | Где выполнено |
